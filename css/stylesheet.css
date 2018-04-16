@@ -1,0 +1,263 @@
+/*RESET*/
+* {
+    box-sizing: border-box;
+    margin-top:0;
+    margin-right:0;
+    margin-bottom:0;
+    margin-left:0;
+    padding:0;
+}
+
+html { 
+    font-size:16px;
+}
+/*Styling of homepage starts here*/
+nav {
+    position: relative;
+    z-index: 10;
+}
+nav ul{
+    display:flex;
+    justify-content:flex-end;
+    list-style-type: none;
+}
+.index{
+    flex-grow:1;
+    text-align:left;
+    padding:2px;
+    margin:2px;
+    font-size: 2rem;
+    font-family: Kaushan Script, open sans;
+}
+.professional, .hobbies{
+    flex-grow:0;
+    padding:2px;
+    margin:2px;
+    font-size: 1.5rem;
+}
+nav ul a{
+    text-decoration: none;
+    padding:2px;
+    margin:2px;
+    color:#191919;
+}
+
+header {
+    height: 420px;
+    text-align: center;
+    margin-top:20px;
+}
+header p{
+    text-align: center;
+}
+
+.hpbody {
+     display:flex;
+     margin: 0 auto;
+     justify-content:center;
+     box-sizing: border-box;
+}
+
+.name {
+    width:350px;
+    height:250px;
+    margin-top:50px;
+    text-align: right;
+    padding-right: 10px;
+    font-size: 2rem;
+    font-family: 'Cormorant Garamond', serif;
+    /*border: 1px solid red;*/
+}
+.description{
+    width:550px;
+    height:250px;
+    margin-top:50px;
+    text-align:left;
+    padding-top:8px;
+    padding-left: 20px;
+    font-size: 1.2rem;
+    font-family: 'Cormorant Garamond', serif;
+    /*border: 1px solid red;*/
+
+}
+
+
+/* Trapeze page styling starts here*/
+
+#trapeze-header {
+    position: relative;
+    height: 450px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-top: -45px;
+    padding-top: 45px;
+    z-index:1;
+}
+#trapeze-header::before {
+    content:'';
+    position: absolute;
+    top: 0;
+    left:0;
+    bottom: 0;
+    right: 0;
+    background-image: url("../images/trapeze tricks.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter:opacity(40%);
+    z-index: -1;
+}
+
+
+#trapeze-header img{
+    width:400px;
+    height:250px;
+    margin-left: 10px;
+}
+h2{
+    text-align: center;
+    font-weight:20;
+}
+.head-font {
+    margin: 20px 100px 20px 100px;
+}
+
+#container{
+    width: 1200px;
+    margin: 0 auto;
+}
+#container p{
+    text-align: center;
+}
+.trapeze-parent{
+    /*margin:20px 0px 45px 0px;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    box-sizing: border-box;
+}
+.tricks{
+    /*flex: 0 0 50%;*/
+    box-sizing: border-box;
+}
+
+.tricks video{
+    margin:10px;
+    height:300px;
+    width:250;
+}
+
+.large-body{
+    font-weight: 900;
+    text-align: center;
+    margin-bottom:0;
+}
+.small-heading{
+    font-size: 0.85rem;
+    text-align: center;
+    margin-top:0;
+}    
+
+/* Professional page styling starts here*/
+.about-me{
+    position:relative;
+    height: 500px;
+    text-align: center;
+    margin-top: -45px;
+    padding-top:45px;
+    display: flex; /* Creates flex container */
+    flex-direction: column; /* Set flex items in a column */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* center items horizontally */  
+    z-index:1;
+} 
+.about-me::before{
+    content:'';
+    position:absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    background-image: url("../images/SA_800.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;  
+    filter:opacity(40%);
+    z-index: -1;
+}
+#main-content{
+    margin: 10px 30px 10px 30px;
+    width:auto;
+}    
+.plannista{
+    display:flex;
+    margin-top: 20px;
+    /*height:500px;*/
+    /*border:1px solid red;*/
+}
+
+.ptitle{
+    color:#fe1a69;
+    font-size: 2rem;
+}
+.plannista p{
+    width: 450px;
+    height: auto; 
+    margin-right: 20px;
+}
+.plannista img{
+    width:900px;
+    height:400px;
+}
+
+.fbb{
+    display:flex;
+    margin-top: 20px;
+    /*height:500px;*/
+    /*border:1px solid red;*/
+}
+.fbb img {
+    width:900px;
+    height:400px;
+}
+.ftitle{
+    color:#DA70D6;
+    font-size: 2rem;
+    margin-left: 20px;
+}
+.fbb p{
+    width: 450px;
+    height: auto;
+    margin-left: 20px;
+}
+.vprivee{
+    display:flex;
+    margin-top: 20px;
+    /*height:500px;*/
+    /*border:1px solid red;*/
+}
+
+.vtitle{
+    color:#ce2e77;
+    font-size: 2rem;
+}
+.vprivee p{
+    width: 500px;
+    height: auto; 
+    margin-right: 100px;
+}
+.vprivee img{
+    width:800px;
+    height:400px;
+}
+
+footer{
+    height:170px;
+    text-align:center;
+    padding-top:70px;
+}
+
+footer a{
+    text-decoration: none;
+}
